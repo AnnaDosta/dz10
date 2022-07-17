@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body contenteditable="false">
+    <div class="main">
+      <h1>AnnaLOGO</h1>
+      <hr />
+
+      <h2>PORTFOLIO</h2>
+
+      <div>
+        <button class="btn active" onclick="filterObject.renderArray(true)">
+          Show all
+        </button>
+        <button class="btn" onclick="filterObject.filterArray('Nature')">
+          Nature
+        </button>
+        <button class="btn" onclick="filterObject.filterArray('Cars')">
+          Cars
+        </button>
+        <button class="btn" onclick="filterObject.filterArray('People')">
+          People
+        </button>
+      </div>
+
+      <div class="row" id="portfolio"></div>
+    </div>
+    <script src="./filter.js"></script>
+  </body>
+</html>
